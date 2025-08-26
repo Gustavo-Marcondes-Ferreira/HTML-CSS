@@ -8,22 +8,33 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             width: 500px;
             border-collapse: collapse;
             text-align: center;
         }
+
         caption {
             font-size: 1.2em;
             padding: 10px;
             font-weight: bolder;
         }
+        
         th, td {
             border: 1px solid black;
             padding: 6px;
         }
 
-        .destaque {
+        .cnome {
+            background-color: brown;
+        }
+
+        .camarelo {
+            background-color: yellow;
+        }
+
+        .cvermelho {
             background-color: brown;
         }
     </style>
@@ -32,6 +43,10 @@
     <h1>Exercício de Tabelas</h1>
 
     <table>
+        <colgroup>
+            <col class="cvermelho" span="2">
+            <col class="camarelo" span="2">
+        </colgroup>
         <caption>Cadastro</caption>
         <thead>
             <tr>
